@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="match_parent"
+    app:cardCornerRadius="@dimen/margin_16"
+    android:layout_marginLeft="@dimen/margin_8"
+    android:layout_marginTop="@dimen/margin_8"
+    app:layout_constraintCircleRadius="@dimen/margin_16"
+    android:layout_marginRight="@dimen/margin_8"
+    android:layout_height="260dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:scaleType="centerCrop"
+      android:src="@drawable/photo_1"
+            android:id="@+id/profile_pic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <com.github.mmin18.widget.RealtimeBlurView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:realtimeBlurRadius="30dp"
+
+            app:realtimeOverlayColor="#4000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="@color/white"
+            android:fontFamily="@font/extra_bold"
+            android:text="Beena"
+            android:elevation="@dimen/margin_6"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/margin_14"
+            android:id="@+id/name"
+            android:layout_marginBottom="@dimen/margin_8"
+
+            android:layout_height="wrap_content"/>
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
